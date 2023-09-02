@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta property="og:title" content="Venkatesh portfolio">
+        <meta property="og:type" content="website">
+        <meta property="og:img" content="logo1.png">
+        <meta property="og:url" content="https://venkatesh-porfolioview.web.app/">
+        <meta name="author" content="venkatesh">
+        <meta name="keywords" content="resume,portfolio,venkatesh,venkatesh-portfolio,venkateshportfolio,viewportfolio,html,css">
+        <meta name="description" content="myportfolio">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="png" href="log1.png">
+        <script src="https://kit.fontawesome.com/71d734a9b4.js" crossorigin="anonymous"></script>
+        <title>venkatesh | portfolio</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="log1.png" class="logo">
+                    <ul>    
+                        <li><a id="up" href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="anime">
+                <h1>Hi, I'am<span> Venkatesh </span><br>From India</br></h1>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                 <div class="row">
+                        <div class="c1">
+                         <img src="myphoto.jpg">
+                        </div>
+                        <div class="c2">
+                           <h1 class="sub"> About me</h1>
+                           <p>Hello all, I'm venkatesh from kaniyakumari curently pursuing
+                             undergraduate with the focus on electronics and communication engineering
+                            in M.Kumarasamy college of Engineering At karur.
+                           </p>
+                            <div class="tittle">
+                              <p class="tab-links active-link button" onclick="opentab('skills')">Skills</p>
+                              <p class="tab-links button" onclick="opentab('certifications')">Certifications</p>
+                              <p class="tab-links button" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-content active-tab" id="skills">
+                             <ul>
+                                <li><span>HTML CSS JS</span><br>Web Design</br></li>
+                                <li><span>GCP</span><br>Cloud Computing</br></li>
+                                <li><span>JAVA C </span><br>Programming</br></li>
+                                <li><span>SQL</span><br> Database Management</br></li>
+                             </ul>
+                            </div>
+                            <div class="tab-content" id="certifications">
+                                <ul>
+                                   <li><span>Associate Cloud Engineer</span><br>Certified by Google Cloud</br></li>
+                                   <li><span>Introduction to IOT</span><br>Certified by NPTEL</br></li>
+                                   <li><span>CCNA7-Introduction to Networking </span><br>Certified by Cisco</br></li>
+                                </ul>
+                               </div>
+                            <div class="tab-content" id="education">
+                             <ul>
+                                <li><span>2020-2024 | Current</span><br>Doing B.E in M.Kumarasamy college of Engineering at Karur</br></li>
+                                <li><span>2019-2020</span><br>Done school in Belfield Matric.Hr.sec School at Nagercoil</br></li>
+                             </ul>
+                            </div>
+                            
+                        </div>
+                 </div>
+
+            </div>
+         </div>
+        </div>
+         <div id="projects">
+            <div class="container">
+                <h1 class="sub">Projects</h1>
+                <div class="project-list p-1" >
+                    <div class="work">
+                        <img src="telebot.png">
+                        <div class="layer">
+                        <h2>IOT-Gas safety</h2>
+                        <p>This is an innovative project that interfaced with the instant communication telegram bot.
+                            notify when gas toxic gas leaks via Telegram Bot
+                        </p>
+                        <a href="https://github.com/venki2392002/gas-leakagealer-using-telegram-bot" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+            </div>
+            
+                </div>
+            </div>
+         </div>
+           <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="c1-left">
+                        <h1 class="sub">Contact me</h2>
+                        <p><i class="fa-brands fa-telegram"></i></i>venkateshvenki2392002@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>8056925260</p>
+                        <div class="icons">
+                            <a href="mailto:venkateshvenki2392002@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://wa.me/918056925260?text=Hi" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/venkatesh-i-a1401a233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/venki2392002" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="VENKATESH Resume.pdf" download class="btn btn-2">Download Resume</a>
+                    </div>
+                    <div class="c2-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your name">
+                            <input type="email" name="Email" placeholder="Your email">
+                            <textarea name="Message" placeholder="Drop your message" rows ="6"></textarea>
+                            <button type="submit" class="btn btn-2">submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                 </div>
+             </div>
+         </div>
+         <div class="up">
+            <a href="#up"><i class="fa-solid fa-up-long"></i></a>
+         </div>
+         <div class="Copyright">
+            <p>Copyright@venkatesh.</p>
+         </div>
+    <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontent=document.getElementsByClassName("tab-content");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                }
+                for(tabcotents of tabcontent){
+                    tabcotents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+    </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbBIQqBv7DuqQEH-sjJ6v0qRuBEhA2fy15AdkuPqq7tlPKskDto2XQPwY_9oTKRpqPjg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+        {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },2000)
+        })
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
